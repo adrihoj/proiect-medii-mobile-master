@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProiectMobile.ProgramareListPage"
+             Title="Lista Programari">
+    <StackLayout>
+        <ListView x:Name="programariListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="{Binding NumeBeneficiar}" 
+                                   FontAttributes="Bold"/>
+                            <Label Text="{Binding DataProgramare}" 
+                                   FontAttributes="Bold"/>
+                            <Label Text="{Binding serviciu.NumeServiciu}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

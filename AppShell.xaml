@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ProiectMobile.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ProiectMobile"
+    Shell.FlyoutBehavior="Disabled">
+    <TabBar>
+        <ShellContent
+ Title="Home"
+ ContentTemplate="{DataTemplate local:AboutPage}"
+ />
+        <ShellContent
+ Title="Detalii biserica"
+ ContentTemplate="{DataTemplate local:MainPage}"
+ />
+
+        <ShellContent
+ Title="Servicii"
+ ContentTemplate="{DataTemplate local:ListEntryPage}"
+ />
+        <ShellContent
+Title="Creeaza o programare"
+ContentTemplate="{DataTemplate local:ProgramarePage}"
+/>
+        <ShellContent
+ Title="Programari existente"
+ ContentTemplate="{DataTemplate local:ProgramareListPage}"
+ />
+    </TabBar>
+
+</Shell>
